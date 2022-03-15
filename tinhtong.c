@@ -1,21 +1,19 @@
 #include <stdio.h>
-#include <conio.h>
+#include <math.h>
 
 int main()
 {
-    int i, n;
-    long S;
-    S = 0;
-    i = 1;
+    int  n;
+    long S=0;
+    
     printf("\nNhap n: ");
     scanf("%d", &n);
 
-    while(i <= n)
-    {
+    for(int i=1; i <= n; i++)
+        {
         S = S + i;
-        i++;
-    }
+        }
     printf("\nTong 1 + 2 + ... + %d la %ld: ", n, S);
-    getch();
+    
     return 0;
 }
