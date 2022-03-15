@@ -8,7 +8,7 @@ int main() {
 	for(int i = 1; i <= n; i++) {
 		ts = pow(x, 2*i+1);
 		ms = ms*i*2*(2*i+1);
-		s=S+(ts*1.0/ms);
+		s=s+(ts*1.0/ms);
 	}
 	printf("%f", s);
 	return 0;
